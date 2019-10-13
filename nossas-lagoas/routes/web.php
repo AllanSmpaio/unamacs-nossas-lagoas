@@ -22,3 +22,6 @@ Route::get('/lista-lagoa', function () {
 Route::get('/lagoa', function () {
     return view('lagoa');
 });
+
+Route::get('/usuario/cadastro', 'UsuarioController@create')->name('usuario.create');
+Route::resource('usuario', 'UsuarioController');
