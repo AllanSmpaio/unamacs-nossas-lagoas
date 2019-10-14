@@ -46,7 +46,7 @@
   <!--CONTEÚDO-->
 <div class="container-fluid bloco-apresentacao" >
   <section class="container col-10 col-sm-10 col-md-10 texto-apresentacao" >
-    <div class="row">
+    <div class="row banner-text">
       <div class="conteudo col-md-9">
         <h1>Encontre tudo sobre <br>as <span class="color-word">lagoas</span> 
           de <span class="color-word">Feira de Santana</span> 
@@ -147,7 +147,7 @@
 
   <section class="container contatos-box col-12 col-md-9 ">
     <section class="row ">
-      <article class="col-12 col-md-8 contatos-box-left">
+      <article class="col-12 col-md-7 contatos-box-left">
         <article class="container-fluid form-box col-12 col-md-11">
           <h3><b>Nos envie uma mensagem</b></h3>
           <form class="formulario">
@@ -167,7 +167,7 @@
           </form>
         </article>
       </article>
-      <article class="col-12 col-md-4 contatos-box-right ">  
+      <article class="col-12 col-md-5 contatos-box-right ">  
         <article class="container-fluid info-box ">
           <h3><b>informações de contato</b></h3>
           <article class="info-contato">
@@ -183,7 +183,7 @@
             </p>
             <h3><b>Nosso email</b></h3>
             <p>
-              unamacs.semmam@pmfs.ba.gov.br
+              <span>unamacs.semmam</span><span>@pmfs.ba.gov.br</span>
             </p>
             <h3><b>Ligue para nós</b></h3>
             <p>
