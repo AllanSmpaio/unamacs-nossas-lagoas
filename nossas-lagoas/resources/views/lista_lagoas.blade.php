@@ -64,8 +64,8 @@
       <hr id="separa-titulo-lagoa">
     </section>
     <section class="lagoas col-md-10">
-      <section class="row lista-lagoas">
-        <section class="quadro-imagem col-md-4">
+      <div class="row lista-lagoas">
+        <div class="quadro-imagem col-lg-4 col-md-6 col-xs-12">
           <div class="borda">
             <article class="img" id="lagoa">
                 <img src="img/testes/lagoa-01.jpg" class="d-inline-block align-top" id="imagem-lagoa" alt="">
@@ -76,9 +76,9 @@
               <hr> 
             </article>
           </div>
-        </section>
+        </div>
 
-        <section class="quadro-imagem col-md-4">
+        <div class="quadro-imagem col-lg-4 col-md-6 col-xs-12">
           <div class="borda">
             <article id="lagoa">
               <img src="img/testes/lagoa-02.jpg" class="d-inline-block align-top" id="imagem-lagoa" alt="">
@@ -89,9 +89,9 @@
               <hr>
             </article>
           </div>
-        </section>
+        </div>
 
-        <section class="quadro-imagem col-md-4">
+        <div class="quadro-imagem col-lg-4 col-md-6 col-xs-12">
            <div class="borda">
             <article id="lagoa">
                 <img src="img/testes/lagoa-03.jpg" class="d-inline-block align-top" id="imagem-lagoa" alt="">
@@ -102,10 +102,8 @@
               <hr> 
             </article>
           </div>
-        </section>
-      </section>
-      <section class="row">
-        <section class="quadro-imagem col-md-4">
+        </div>
+        <div class="quadro-imagem col-lg-4 col-md-6 col-xs-12">
           <div class="borda">
             <article class="img" id="lagoa">
                 <img src="img/testes/lagoa-01.jpg" class="d-inline-block align-top" id="imagem-lagoa" alt="">
@@ -116,9 +114,9 @@
               <hr> 
             </article>
           </div>
-        </section>
+        </div>
 
-        <section class="quadro-imagem col-md-4">
+        <div class="quadro-imagem col-lg-4 col-md-6 col-xs-12">
           <div class="borda">
             <article id="lagoa">
               <img src="img/testes/lagoa-02.jpg" class="d-inline-block align-top" id="imagem-lagoa" alt="">
@@ -129,9 +127,9 @@
               <hr>
             </article>
           </div>
-        </section>
+        </div>
 
-        <section class="quadro-imagem col-md-4">
+        <div class="quadro-imagem col-lg-4 col-md-6 col-xs-12">
            <div class="borda">
             <article id="lagoa">
                 <img src="img/testes/lagoa-03.jpg" class="d-inline-block align-top" id="imagem-lagoa" alt="">
@@ -142,8 +140,8 @@
               <hr> 
             </article>
           </div>
-        </section>
-      </section>
+        </div>
+      </div>
     </section>
   </section>
 
