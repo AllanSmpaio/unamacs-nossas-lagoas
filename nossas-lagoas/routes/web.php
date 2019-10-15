@@ -25,3 +25,5 @@ Route::get('/lagoa', function () {
 
 Route::get('/usuario/cadastro', 'UsuarioController@create')->name('usuario.create');
 Route::resource('usuario', 'UsuarioController');
+
+Route::resource('postagem', 'PostagemController');
