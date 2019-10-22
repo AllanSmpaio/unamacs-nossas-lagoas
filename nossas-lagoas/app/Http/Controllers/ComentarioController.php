@@ -2,27 +2,26 @@
 
 namespace App\Http\Controllers;
 
-use App\Postagem;
+use App\Comentario;
 use Illuminate\Http\Request;
 
-class PostagemController extends Controller
+class ComentarioController extends Controller
 {
-
     public function force_delete($id){
-        $postagem = Postagem::onlyTrashed()->find($id);
-        $postagem->delete();
+        $comentario = Comentario::onlyTrashed()->find($id);
+        $comentario->forceDelete();
         //return redirect()->route('');
     }
 
     public function restore($id){
-        $postagem = Postagem::onlyTrashed()->find($id);
-        $postagem->restore();
+        $comentario = Comentario::onlyTrashed()->find($id);
+        $comentario->restore();
         //return redirect()->route('');
     }
 
     public function index_trashed(){
-        $postagens = Postagem::onlyTrashed()->get();
-        //return view('', compact('postagens'));
+        $comentarios = Comentario::onlyTrashed()->get();
+        //return view('', compact('comentarios'));
     }
 
     /**
@@ -42,7 +41,7 @@ class PostagemController extends Controller
      */
     public function create()
     {
-        return view("postagem");
+        //
     }
 
     /**
@@ -53,25 +52,16 @@ class PostagemController extends Controller
      */
     public function store(Request $request)
     {
-        $postagem = new Postagem();
-        $postagem->titulo = $request->input('titulo');
-        $postagem->descrição = $request->input('descricao');
-        $path = $request->file("anexo")->store('images', 'public');
-        $postagem->anexo = $path;
-        date_default_timezone_set('America/Bahia');
-        $data_atual = date('Y-m-d H:i:s', time());
-        $postagem->data_postagem = $data_atual;
-        $postagem->save();
-        return redirect()->route('postagem.create');
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Postagem  $postagem
+     * @param  \App\Comentario  $comentario
      * @return \Illuminate\Http\Response
      */
-    public function show(Postagem $postagem)
+    public function show(Comentario $comentario)
     {
         //
     }
@@ -79,10 +69,10 @@ class PostagemController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Postagem  $postagem
+     * @param  \App\Comentario  $comentario
      * @return \Illuminate\Http\Response
      */
-    public function edit(Postagem $postagem)
+    public function edit(Comentario $comentario)
     {
         //
     }
@@ -91,10 +81,10 @@ class PostagemController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Postagem  $postagem
+     * @param  \App\Comentario  $comentario
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Postagem $postagem)
+    public function update(Request $request, Comentario $comentario)
     {
         //
     }
@@ -102,12 +92,12 @@ class PostagemController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Postagem  $postagem
+     * @param  \App\Comentario  $comentario
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Postagem $postagem)
+    public function destroy(Comentario $comentario)
     {
-        $postagem->delete();
+        $comentario->delete();
         //return redirect()->route('');
     }
 }
